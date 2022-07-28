@@ -24,7 +24,7 @@ export class CartService {
   }
 
   getShippigPrices(){
-    return this.http.get<{type:string, price:number}{}>
-    ('/assests/shipping.json');
+    return this.http.get<{type:string, price:number}[]>
+    ('/assets/shipping.json');
   }
 }
